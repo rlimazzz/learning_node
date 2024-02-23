@@ -1,0 +1,16 @@
+<h1>
+    <p>Welcome to letterBOXXXXX</p>
+    <h1>Your website to share your movies taste </h1>
+    <button type="submit">Search:</button>
+    <form action="/home">
+        <button type="submit">Send an opinion:</button>
+    </form>
+</h1>
+
+{{#each avaliacoes}}
+    <p>{{titulo}}: {{conteudo}}</h1>
+    <!--Acho Interessante notar que para redirecionar um usuário basta usar um href para linkar a página de redirecionamento-->
+    <a href="/bloquear/{{id}}"><button>Block</button></a>
+    <hr>
+{{/each}}
+
